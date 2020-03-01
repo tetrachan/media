@@ -1,0 +1,83 @@
+/* external css: flickity.css, fullscreen.css */
+
+* { box-sizing: border-box; }
+
+body { font-family: sans-serif; }
+
+.carousel {
+  background: #262626;
+
+}
+
+/*-- At screens 1280px and ABOVE, set normal carousel size --*/
+@media screen and (min-width: 1280px) {
+
+.carousel-cell {
+  height: 400px;
+  margin-right: 50px;
+  /* center images in cells with flexbox */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.p-lr-cool{
+  padding-left: 400px;
+  padding-right: 400px;
+}
+}
+
+/*-- Mobile Nav Queries --*/
+/*--At screens BELOW 1280px, shrinks carousel --*/
+@media screen and (max-width: 1279px) {
+  .carousel-cell {
+    height: 200px;
+    margin-right: 50px;
+    /* center images in cells with flexbox */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .p-lr-cool{
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+}
+
+.flickity-button {
+  background: transparent;
+}
+
+.flickity-button-icon {
+  color: white;
+}
+
+.flickity-button:hover {
+  background: #b3f2ff;
+}
+
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+}
+
+
+.carousel-cell-image {
+  display: block;
+  max-height: 100%;
+}
+
+
+/* position dots up a bit */
+.flickity-page-dots {
+  bottom: -22px;
+}
+/* dots are lines */
+.flickity-page-dots .dot {
+  background-color: #b3f2ff;
+  height: 4px;
+  width: 5%;
+  margin: 0;
+  border-radius: 0;
+}
